@@ -32,8 +32,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="proyectos" className="py-16 md:py-20 px-6 md:px-20 bg-industrial-900">
-      <div className="max-w-6xl mx-auto">
+    <section id="proyectos" className="min-h-screen py-16 md:py-20 px-6 md:px-20 bg-industrial-900">
+      <div className="max-w-6xl mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 border-b border-zinc-800 pb-4 text-center md:text-left gap-4">
           <h2 className="text-3xl md:text-4xl font-glitch text-vibe-red mb-12 text-center uppercase">PROYECTOS</h2>
         </div>

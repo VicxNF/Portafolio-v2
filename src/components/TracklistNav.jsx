@@ -6,8 +6,9 @@ const TracklistNav = ({ currentTheme }) => {
   const tracks = [
     { id: '01', label: 'INICIO', href: '#inicio' },
     { id: '02', label: 'SOBRE_MÍ', href: '#sobre-mi' },
-    { id: '03', label: 'HABILIDADES', href: '#habilidades' },
-    { id: '04', label: 'PROYECTOS', href: '#proyectos' },
+    { id: '03', label: 'EXPERIENCIA', href: '#experiencia' },
+    { id: '04', label: 'HABILIDADES', href: '#habilidades' },
+    { id: '05', label: 'PROYECTOS', href: '#proyectos' },
   ];
 
   const themeConfigs = {

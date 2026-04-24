@@ -16,7 +16,7 @@ const Hero = ({ currentTheme }) => {
 
 
   return (
-    <section id="inicio" className="flex flex-col items-center justify-center min-h-[80vh] md:h-[70vh] relative px-6">
+    <section id="inicio" className="flex flex-col items-center justify-center min-h-screen relative px-6">
 
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}

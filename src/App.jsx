@@ -6,6 +6,7 @@ import Projects from "./sections/Projects";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import TracklistNav from "./components/TracklistNav";
 import SocialLinks from "./components/SocialLinks";
+import Experience from "./components/Experience";
 
 
 function App() {
@@ -27,21 +28,13 @@ function App() {
       <main className="pt-20"> {/* Espacio para el navbar fijo */}
         <Hero currentTheme={currentTheme} /> 
         <About />
+        <Experience />
         <Skills />
         <Projects />
       </main>
 
       <SocialLinks /> 
       <ThemeSwitcher currentTheme={currentTheme} onChangeTheme={changeTheme} />
-      
-      <footer className="py-20 text-center bg-industrial-900 border-t border-industrial-800 transition-colors duration-500">
-        <div className="font-glitch text-2xl text-vibe-red mb-4 italic uppercase">
-          VCTR_OS
-        </div>
-        <p className="font-mono text-[9px] text-texto-base opacity-60 uppercase tracking-[0.5em]">
-          End of Transmission // {currentTheme.replace(/-/g, " ")} // 2024
-        </p>
-      </footer>
     </div>
   );
 }

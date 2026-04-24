@@ -442,8 +442,26 @@ body::before {
 ::-webkit-scrollbar-track { background: #0a0a0a; }
 ::-webkit-scrollbar-thumb { background: var(--accent-color); }
 
-section { scroll-margin-top: 100px; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  overflow: hidden; /* Evita que cosas se salgan */
+  position: relative;
+}
+
+img {
+  max-height: 80vh; /* Nunca más alta que el 80% de la pantalla */
+  width: auto;
+}
 
 /* Animaciones Glitch */
 .glitch-layer-1 { animation: glitch-anim-1 2s infinite linear alternate-reverse; }

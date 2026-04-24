@@ -5,7 +5,6 @@ const About = () => {
     <section id="sobre-mi" className="min-h-screen flex items-center py-20 px-6 md:px-20 border-t border-industrial-700 bg-industrial-900">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center w-full">
         
-        {/* Lado de la Foto: Limitamos el ancho máximo para que no sea gigante */}
         <div className="relative group w-full max-w-[320px] md:max-w-[400px] mx-auto">
           <div className="absolute -inset-2 bg-vibe-red opacity-20 group-hover:opacity-40 transition-opacity blur-sm"></div>
           
@@ -18,7 +17,6 @@ const About = () => {
           <div className="absolute top-0 left-0 w-full h-full bg-vibe-red/10 mix-blend-overlay pointer-events-none"></div>
         </div>
 
-        {/* Lado del Texto */}
         <div className="text-center md:text-left text-texto-base">
           <h2 className="text-4xl md:text-5xl font-glitch text-vibe-red mb-6 uppercase tracking-tighter">_SOBRE_MÍ</h2>
           <p className="font-mono text-base md:text-lg opacity-70 mb-4 uppercase tracking-tighter">

@@ -7,7 +7,6 @@ const Navbar = () => {
         VCTR_OS
       </div>
       
-      {/* En móvil reducimos el espacio y el tamaño de letra */}
       <div className="flex gap-3 md:gap-8 font-mono text-[10px] md:text-sm tracking-tighter">
         <a href="#proyectos" className="hover:text-vibe-red transition-colors">[ PROYECTOS ]</a>
         <a href="#habilidades" className="hover:text-vibe-red transition-colors">[ HABILIDADES ]</a>

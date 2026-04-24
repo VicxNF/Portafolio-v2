@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="bg-industrial-900 min-h-screen transition-all duration-500 selection:bg-vibe-red selection:text-white">
       <TracklistNav currentTheme={currentTheme} />
-      <main className="pt-20"> {/* Espacio para el navbar fijo */}
+      <main className="pt-20"> 
         <Hero currentTheme={currentTheme} /> 
         <About />
         <Experience />

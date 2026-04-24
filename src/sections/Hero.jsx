@@ -37,7 +37,7 @@ const Hero = ({ currentTheme }) => {
 
         <div className="mt-16 md:mt-20 border-l-2 border-vibe-red pl-4 md:pl-6 py-4 max-w-xs md:max-w-lg self-start md:ml-20">
              <motion.p 
-          key={currentTheme} // Esto hace que la frase se anime al cambiar
+          key={currentTheme}
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 0.8, x: 0 }}
           className="font-mono text-sm italic text-texto-base opacity-100"

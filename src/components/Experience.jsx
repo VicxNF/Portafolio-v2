@@ -51,7 +51,6 @@ const Experience = () => {
               viewport={{ once: true }}
               className="relative pl-8 border-l-2 border-industrial-700 group hover:border-vibe-red transition-colors"
             >
-              {/* Punto decorativo en la línea de tiempo */}
               <div className="absolute -left-[9px] top-0 w-4 h-4 bg-industrial-900 border-2 border-industrial-700 group-hover:border-vibe-red rounded-full transition-colors"></div>
 
               <div className="flex flex-col md:flex-row md:justify-between md:items-baseline mb-4 gap-2">

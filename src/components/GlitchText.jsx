@@ -6,10 +6,8 @@ const GlitchText = ({ text, className }) => {
       whileHover="hover"
       className={`relative inline-block cursor-pointer ${className}`}
     >
-      {/* Texto Principal */}
       <span className="relative z-10">{text}</span>
       
-      {/* Capa de Glitch Rojo */}
       <motion.span
         variants={{
           hover: { opacity: 1, x: -2, y: 1, transition: { repeat: Infinity, duration: 0.1 } }
@@ -19,7 +17,6 @@ const GlitchText = ({ text, className }) => {
         {text}
       </motion.span>
 
-      {/* Capa de Glitch Verde */}
       <motion.span
         variants={{
           hover: { opacity: 1, x: 2, y: -1, transition: { repeat: Infinity, duration: 0.1, delay: 0.05 } }

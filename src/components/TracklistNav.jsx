@@ -14,7 +14,7 @@ const TracklistNav = ({ currentTheme }) => {
   const themeConfigs = {
   'hybrid-theory': { 
     suffix: ':', 
-    font: 'font-tracklist', // Archivo Narrow
+    font: 'font-tracklist',
     weight: 'font-bold',
     casing: 'uppercase', 
     exponent: false 
@@ -28,14 +28,14 @@ const TracklistNav = ({ currentTheme }) => {
   },
   'minutes-to-midnight': { 
     suffix: '', 
-    font: 'font-serif', // EB Garamond
+    font: 'font-serif',
     weight: 'font-medium',
     casing: 'capitalize', 
     exponent: true 
   },
   'a-thousand-suns': { 
     suffix: ':', 
-    font: 'font-heading', // Michroma
+    font: 'font-heading',
     weight: 'font-normal',
     casing: 'uppercase', 
     exponent: false,
@@ -43,39 +43,39 @@ const TracklistNav = ({ currentTheme }) => {
   },
   'living-things': { 
     suffix: '', 
-    font: 'font-living', // Heebo
-    weight: 'font-light', // Muy delgada en LT
+    font: 'font-living',
+    weight: 'font-light',
     casing: 'uppercase', 
     exponent: false, 
     icons: true 
   },
   'the-hunting-party': { 
     suffix: '', 
-    font: 'font-hunting', // Bebas Neue
+    font: 'font-hunting',
     weight: 'font-normal',
     casing: 'uppercase', 
     exponent: false, 
     hideNumbers: true, 
     tracking: 'tracking-widest',
-    box: false // <--- ASEGÚRATE DE QUE ESTO SEA FALSE
+    box: false //
   },
   'one-more-light': { 
     suffix: '', 
-    font: 'font-light', // Montserrat Light
+    font: 'font-light',
     weight: 'font-light', 
     casing: 'uppercase', 
     exponent: true, 
-    tracking: 'tracking-[0.3em]', // Espaciado amplio como en el CD
+    tracking: 'tracking-[0.3em]',
     hideNumbers: false 
   },
   'from-zero': { 
       suffix: '', 
-      font: 'font-heading', // Archivo Black
-      weight: 'font-black', // Peso máximo
+      font: 'font-heading',
+      weight: 'font-black',
       casing: 'uppercase', 
       exponent: false, 
-      hideNumbers: true,    // En la foto de From Zero NO hay números
-      tracking: 'tracking-tighter' // Letras pegadas
+      hideNumbers: true,   
+      tracking: 'tracking-tighter'
     },
 };
 

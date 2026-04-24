@@ -12,7 +12,6 @@
 }
 
 nav {
-  /* Forzamos que 'current' sea el color de acento del tema */
   color: var(--accent-color);
   transition: color 0.5s ease;
 }
@@ -36,7 +35,7 @@ nav {
 
 [data-theme="hybrid-theory"] .bg-industrial-900 {
   background-image: 
-    linear-gradient(rgba(209, 209, 207, 0.7), rgba(209, 209, 207, 0.9)), /* Filtro beige/cemento */
+    linear-gradient(rgba(209, 209, 207, 0.7), rgba(209, 209, 207, 0.9)),
     url('/backgrounds/hybrid-theory.png') !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
@@ -52,18 +51,16 @@ nav {
   --text-vibe: #8c7a4b;
   --font-heading: "Archivo Black", sans-serif;
   --nav-font: "Archivo Narrow", sans-serif;
-  --nav-border-opacity: 0; /* Meteora no tiene marco */
-  --nav-number-suffix: "."; /* Cambiamos ":" por "." */
+  --nav-border-opacity: 0;
+  --nav-number-suffix: ".";
   --cd-color: #222222; 
   --cd-border: #444444;
 }
 
-/* Forzamos que en Meteora el texto del menú sea blanco puro */
 [data-theme="meteora"] nav {
   color: #ffffff;
 }
 
-/* Quitamos el desenfoque de fondo para que sea una lista limpia */
 [data-theme="meteora"] nav .backdrop-blur-md {
   backdrop-filter: none;
   background: transparent;
@@ -73,25 +70,23 @@ nav {
   --bg-color: #ffffff; 
   --bg-secondary: #e5e5e5; 
   --accent-color: #000000; 
-  --text-main: #000000; /* Texto Negro */
+  --text-main: #000000; 
   --text-vibe: #555555;
   --font-heading: 'Inter', sans-serif;
   --nav-font: "EB Garamond", serif;
-  --cd-color: #ffffff;        /* Blanco del disco */
+  --cd-color: #ffffff;      
   --cd-border: #706f6f; 
 }
 
-/* Aplicación del fondo Minutes to Midnight */
 [data-theme="minutes-to-midnight"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9)), 
     url('/backgrounds/minutes.png') !important;
   background-size: cover !important;
-  background-position: center bottom !important; /* Importante para ver a los integrantes abajo */
+  background-position: center bottom !important;
   background-attachment: fixed !important;
 }
 
-/* Ajuste de botones para este tema */
 [data-theme="minutes-to-midnight"] .bg-vibe-red {
   background-color: #000000 !important;
   color: #ffffff !important;
@@ -105,18 +100,17 @@ nav {
 }
 
 [data-theme="a-thousand-suns"] {
-  --bg-color: #000000; /* Fondo negro total */
+  --bg-color: #000000;
   --bg-secondary: #111111; 
-  --accent-color: #ffffff; /* Blanco para acentos */
-  --text-main: #ffffff; /* Texto blanco */
+  --accent-color: #ffffff; 
+  --text-main: #ffffff; 
   --text-vibe: #888888;
   --font-heading: 'Michroma', sans-serif;
-  --cd-color: #e0e0e0;   /* Gris claro / Plata mate extraído del disco */
-  --cd-border: #000000;  /* El negro del patrón de la foto */
+  --cd-color: #e0e0e0;  
+  --cd-border: #000000; 
 }
 
 
-/* Fondo A Thousand Suns - Efecto de resplandor nuclear */
 [data-theme="a-thousand-suns"] .bg-industrial-900 {
   background-image: 
     radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 80%), 
@@ -128,7 +122,6 @@ nav {
   background-color: #000000 !important;
 }
 
-/* Efecto extra: Los títulos en este modo brillarán sutilmente */
 [data-theme="a-thousand-suns"] h1, 
 [data-theme="a-thousand-suns"] h2 {
   text-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -143,34 +136,30 @@ nav {
 }
 
 [data-theme="living-things"] {
-  --bg-color: #d8d8d8; /* El gris claro del fondo de la imagen */
+  --bg-color: #d8d8d8; 
   --bg-secondary: #c0c0c0; 
-  --accent-color: #000000; /* Negro puro para los acentos */
+  --accent-color: #000000;
   --text-main: #000000; 
   --text-vibe: #666666;
   --font-heading: 'Teko', sans-serif;
   --nav-font: 'Heebo', sans-serif;
   --cd-color: #1a1a1f; 
-  
-  /* El borde plateado/aluminio que se ve en el contorno de tu foto */
   --cd-border: #bbbbbb; 
 }
 
-/* Aplicación del fondo simétrico de Living Things */
 [data-theme="living-things"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(216, 216, 216, 0.4), rgba(216, 216, 216, 0.6)), 
-    url('/backgrounds/living-things.png') !important; /* Usa la nueva foto */
+    url('/backgrounds/living-things.png') !important;
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
 }
 
-/* En este modo, las barras de habilidades serán negras y sólidas */
 [data-theme="living-things"] .bg-vibe-red {
   background-color: #000000 !important;
-  box-shadow: none; /* Quitamos cualquier brillo naranja */
+  box-shadow: none; 
   border: 1px solid #666;
 }
 
@@ -182,15 +171,11 @@ nav {
 [data-theme="the-hunting-party"] {
   --bg-color: #f0f0f0; 
   --bg-secondary: #dcdcdc; 
-  /* Usamos negro para los acentos principales (bordes/lineas) */
   --accent-color: #000000; 
   --text-main: #000000; 
-  /* El azul cian lo guardamos para el efecto de hover */
   --text-vibe: #3a9eb5; 
   --font-heading: 'Bebas Neue', sans-serif;
   --cd-color: #262626; 
-  
-  /* Negro sólido para el borde, representando el arte central de la foto */
   --cd-border: #0a0a0a; 
 }
 
@@ -208,7 +193,6 @@ nav {
   color: #3a9eb5 !important;
 }
 
-/* Fondo The Hunting Party - Humo y Piedra */
 [data-theme="the-hunting-party"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(240, 240, 240, 0.6), rgba(240, 240, 240, 0.8)), 
@@ -228,50 +212,40 @@ nav {
   color: #3a9eb5 !important;
 }
 
-/* Color blanco para el menú en este tema */
 [data-theme="the-hunting-party"] nav {
   color: #000000 !important;
 }
 
 [data-theme="one-more-light"] {
-  --bg-color: #fdf5e6; /* Blanco crema cálido */
-  --bg-secondary: #f3e5f5; /* Violeta muy suave */
+  --bg-color: #fdf5e6;
+  --bg-secondary: #f3e5f5; 
   --text-main: #111111; 
   --accent-color: #d35400; 
-  --text-vibe: #8e44ad; /* Púrpura nostálgico */
+  --text-vibe: #8e44ad;
   --font-heading: 'Montserrat', sans-serif;
   --nav-font: 'Montserrat', sans-serif;
   --cd-color: #ef7d00; 
   --cd-border: #f4a460; 
 }
 
-/* Ajuste de fondo OML - Menos blanco, más imagen */
 [data-theme="one-more-light"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(253, 245, 230, 0.2), rgba(253, 245, 230, 0.3)), 
     url('/backgrounds/oml.png') !important;
   background-attachment: fixed !important;
-  
-  /* Esto evita que la imagen se repita */
   background-repeat: no-repeat !important;
-  
-  /* Esto asegura que la imagen cubra toda la pantalla sin deformarse */
   background-size: cover !important;
-  
-  /* Centramos la imagen para ver a los niños */
   background-position: center !important;
 }
 
-/* ELIMINAMOS el efecto de transparencia en el texto que hace que no se vea el nombre */
 [data-theme="one-more-light"] .font-glitch {
   background: none !important;
   -webkit-background-clip: initial !important;
   -webkit-text-fill-color: initial !important;
-  color: var(--text-main) !important; /* Forzamos color sólido */
-  text-shadow: 2px 2px 0px rgba(230, 126, 34, 0.3); /* Sombra naranja sutil */
+  color: var(--text-main) !important; 
+  text-shadow: 2px 2px 0px rgba(230, 126, 34, 0.3); 
 }
 
-/* Forzamos que las capas de glitch en OML sean visibles */
 [data-theme="one-more-light"] .glitch-layer-1 { color: #d35400; opacity: 0.5; }
 [data-theme="one-more-light"] .glitch-layer-2 { color: #5e2a77; opacity: 0.5; }
 
@@ -284,25 +258,22 @@ nav {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  /* Sombra suave en los bordes para centrar la vista */
   background: radial-gradient(circle, transparent 40%, rgba(230, 126, 34, 0.1) 100%);
   pointer-events: none;
   z-index: 5;
 }
 
-/* En One More Light, el menú debe ser oscuro para resaltar sobre el fondo claro de la playa */
 [data-theme="one-more-light"] nav {
   color: #111111 !important;
 }
 
 [data-theme="one-more-light"] nav a {
-  /* Una sombra muy difusa del mismo color del fondo para que las letras contrasten */
   text-shadow: 0 0 10px rgba(253, 245, 230, 0.8), 0 0 2px rgba(253, 245, 230, 0.5);
 }
 
 [data-theme="one-more-light"] .font-light {
   font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.3em; /* Esto es clave para el look del disco */
+  letter-spacing: 0.3em; 
   font-weight: 300;
 }
 
@@ -311,7 +282,6 @@ nav {
   font-weight: 400;
 }
 
-/* Ajuste sutil para los números en modo exponente */
 .font-exponent {
   vertical-align: super;
   font-size: 0.6em;
@@ -319,11 +289,11 @@ nav {
 }
 
 [data-theme="from-zero"] {
-  --bg-color: #0a0a0a; /* Volvemos al negro profundo */
-  --bg-secondary: #1a101a; /* Negro con un toque púrpura */
-  --accent-color: #ff00ff; /* Magenta puro "From Zero" */
+  --bg-color: #0a0a0a;
+  --bg-secondary: #1a101a;
+  --accent-color: #ff00ff; 
   --text-main: #ffffff; 
-  --text-vibe: #f472b6; /* Rosa suave */
+  --text-vibe: #f472b6; 
   --font-heading: 'Orbitron', sans-serif;
   --nav-font: 'Archivo Black', sans-serif;
   --cd-color: #c0c0c0; 
@@ -335,12 +305,11 @@ nav {
 }
 
 [data-theme="from-zero"] nav a:hover span {
-  color: #ff00ff !important; /* Magenta vibrante */
+  color: #ff00ff !important;
   text-shadow: 0px 0px 15px rgba(255, 0, 255, 0.6);
 }
 
 
-/* Fondo From Zero - Fluidez y Renacimiento */
 [data-theme="from-zero"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.8)), 
@@ -351,15 +320,13 @@ nav {
   background-repeat: no-repeat !important;
 }
 
-/* Las barras de habilidades en este modo brillarán en Magenta */
 [data-theme="from-zero"] .bg-vibe-red {
   background-color: #ff00ff !important;
   box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
 }
 
-/* Efecto de glitch específico para From Zero (más digital/limpio) */
-[data-theme="from-zero"] .glitch-layer-1 { color: #00ffff; } /* Cian */
-[data-theme="from-zero"] .glitch-layer-2 { color: #ff00ff; } /* Magenta */
+[data-theme="from-zero"] .glitch-layer-1 { color: #00ffff; }
+[data-theme="from-zero"] .glitch-layer-2 { color: #ff00ff; } 
 
 [data-theme="from-zero"] .bg-industrial-800 {
   border-radius: 12px;
@@ -379,7 +346,6 @@ nav {
   100% { box-shadow: 0 0 0 0 rgba(255, 69, 0, 0); }
 }
 
-/* --- CONFIGURACIÓN TAILWIND --- */
 @theme {
   --color-industrial-900: var(--bg-color);
   --color-industrial-800: var(--bg-secondary);
@@ -398,34 +364,29 @@ nav {
 
 }
 
-/* --- ESTILOS BASE --- */
 body {
   background-color: #0a0a0a;
   color: var(--text-main);
   transition: all 0.5s ease;
 }
 
-/* --- LÓGICA DE FONDOS (SOLUCIÓN AQUÍ) --- */
 
-/* 1. Fondo para Hybrid Theory */
 [data-theme="hybrid-theory"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(209, 209, 207, 0.8), rgba(209, 209, 207, 0.8)),
     url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
 }
 
-/* 2. Fondo para Meteora - APLICADO DIRECTAMENTE AL CONTENEDOR */
 [data-theme="meteora"] .bg-industrial-900 {
   background-image: 
     linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.8)), 
-    url('/backgrounds/meteora.png') !important; /* !important para forzarlo */
+    url('/backgrounds/meteora.png') !important; 
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
 }
 
-/* Ruido global (Z-INDEX ALTO PARA QUE SE VEA) */
 body::before {
   content: "";
   position: fixed;
@@ -437,7 +398,6 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-/* --- 4. OTROS ESTILOS --- */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #0a0a0a; }
 ::-webkit-scrollbar-thumb { background: var(--accent-color); }
@@ -453,29 +413,31 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra el contenido verticalmente */
-  overflow: hidden; /* Evita que cosas se salgan */
+  justify-content: center; 
+  overflow: hidden; 
   position: relative;
 }
 
 img {
-  max-height: 80vh; /* Nunca más alta que el 80% de la pantalla */
+  max-height: 80vh; 
   width: auto;
 }
 
-/* Animaciones Glitch */
+[data-theme] #habilidades .flex-grow:last-child {
+  filter: brightness(1.2) contrast(1.2);
+}
+
 .glitch-layer-1 { animation: glitch-anim-1 2s infinite linear alternate-reverse; }
 .glitch-layer-2 { animation: glitch-anim-2 3s infinite linear alternate-reverse; }
 .glitch-layer-3 { animation: glitch-skew 0.5s infinite; }
 
 @media (max-width: 768px) {
   #sobre-mi, #habilidades, #proyectos, #contacto {
-    scroll-margin-top: 20px; /* Menos espacio en movil */
+    scroll-margin-top: 20px; 
   }
   
-  /* Desplaza un poco el contenido del Hero en móvil para que no choque con el tracklist */
   section {
-  scroll-margin-top: 40px; /* Ajustado para que el título no quede tan pegado al borde */
+  scroll-margin-top: 40px; 
   }
 }
 
